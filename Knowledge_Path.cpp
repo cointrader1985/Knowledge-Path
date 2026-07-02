@@ -35,4 +35,21 @@ int main() {
         }
 
         if (level <= 3)
-            std::cout << 
+            std::cout << "school stage exercise.\n";
+        else if (level <= 6)
+            std::cout << "university level thinking.\n";
+        else
+            std::cout << "advanced book-based challenge.\n";
+
+        showProgress(score, level);
+    }
+
+    std::cout << "\nFinal Score: " << score << "\n";
+
+    if (score > 60)
+        std::cout << "Excellent learner!\n";
+    else
+        std::cout << "Keep studying!\n";
+
+    return 0;
+}
